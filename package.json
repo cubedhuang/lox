@@ -3,7 +3,7 @@
 	"version": "1.0.0",
 	"description": "implementation of lox from craftinginterpreters.com in typescript",
 	"main": "src/index.ts",
-	"repository": "https://github.com/cubedhuang/lox-ts",
+	"repository": "https://github.com/cubedhuang/lox",
 	"author": "cubedhuang",
 	"license": "MIT",
 	"type": "module",
