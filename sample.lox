@@ -1,0 +1,42 @@
+class LinkedList {
+	init() {
+		this.head = Node(nil);
+		this.tail = this.head;
+	}
+
+	append(value) {
+		var node = Node(value);
+		this.tail.next = node;
+		this.tail = node;
+	}
+
+	prepend(value) {
+		var node = Node(value);
+		node.next = this.head.next;
+		this.head.next = node;
+	}
+
+	print() {
+		var current = this.head;
+		while (current) {
+			print(current.value);
+			current = current.next;
+		}
+	}
+}
+
+class Node {
+	init(value) {
+		this.value = value;
+		this.next = nil;
+	}
+}
+
+var list = LinkedList();
+
+list.append(1);
+list.append(4);
+list.append(3);
+list.append(2);
+
+list.print();

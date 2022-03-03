@@ -1,0 +1,17 @@
+fun fib(n) {
+	if (n < 2) {
+		return n;
+	}
+
+	return fib(n - 1) + fib(n - 2);
+}
+
+var a = clock();
+
+for (var i = 0; i < 25; i += 1) {
+	print(fib(i));
+}
+
+var time = clock() - a;
+
+print("Time: " + time + "ms.");
